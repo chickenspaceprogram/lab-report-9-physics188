@@ -1,4 +1,3 @@
-out/**
+out/
 .DS_Store
 graph-err-bars.png
-!lab-report-9.pdf
