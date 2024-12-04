@@ -33,7 +33,7 @@
     \item How to use the data from these radio observations to determine both the orbital velocity of regions of the Milky Way as well as the distance of these regions from the center of the Milky Way
     \item How to plot the velocity of regions of the Milky Way against their distance from the center of the Milky Way, as well as how to use this plot to determine where the mass of the Milky Way is concentrated
     \item How to determine the mass of objects in the Milky Way that orbit below a certain radius
-    \item How to use the orbital velocity of and distance from the center of the Milky Way of the Large and Small Magellanic Clouds to determine whether Dark or Visible matter is more prevalent in the Milky Way
+    \item How to use the orbital velocity and orbital radius of the Large and Small Magellanic Clouds to determine whether Dark or Visible matter is more prevalent in the Milky Way
 \end{itemize}
 
 \section{Data Collected}
@@ -55,7 +55,7 @@
         64\degree, 
         72\degree, 
         80\degree, and 
-        88\degree galactic longitude.
+        88\degree \space galactic longitude.
     \end{itemize}
 \end{itemize}
 
@@ -67,8 +67,8 @@
     \item Orbital velocity of the Sun around the center of the Milky Way \\ $V_{sun}=220$ km/s
     \item Distance of the Sun from the center of the Milky Way \\ $R_{sun}=8.1$ kpc
     \item Orbital velocity of the Large and Small Magellanic clouds around the center of the Milky Way
-    \item Distance of the Large and Small Magellanic clouds from the center of the Milky Way
-    \item Gravitational constant $G=4302\text{ }\frac{(\text{km/s})^2 \cdot kpc}{GM_{sun}}$
+    \item Orbital radius of the Large and Small Magellanic clouds
+    \item Gravitational constant $G=4302\text{ }\frac{(\text{km/s})^2 \cdot kpc}{GM_{\odot}}$
 \end{itemize}
 
 \section{Analysis of Data}
@@ -82,7 +82,7 @@ This can be done using the following equation:
 \Delta V = c \cdot \frac{\lambda_{obs} - \lambda_{em}}{\lambda_{em}}
 \]
 
-where $c = 3.00 \cdot 10^5$ is the speed of light, $\lambda_{em} = 21.1061$ cm is an emission line of Hydrogen, $\lambda_{obs}$ is the most-redshifted Hydrogen emission line in the observed spectrum (see Figure 1), and $\Delta V$ is the relative velocity of the observed matter.
+where $c = 3.00 \cdot 10^5$ is the speed of light, $\lambda_{em} = 21.1061$ cm is an emission line of Hydrogen, $\lambda_{obs}$ is the most-redshifted Hydrogen emission line in the observed spectrum (see Figure 1), and $\Delta V$ is the velocity of the observed matter relative to the Sun.
 
 Next, to find the orbital velocity of matter in the Milky Way given its velocity relative to the sun, the following equation can be used:
 
@@ -90,7 +90,7 @@ Next, to find the orbital velocity of matter in the Milky Way given its velocity
 V = \Delta V + V_{sun} \cdot \sin(\ell)
 \]
 
-where $V$ is the orbital velocity of the matter, $\Delta V$ is the velocity of the matter relative to the Sun, $V_{sun} = 220$ km/s is the orbital velocity of the Sun around the center of the Milky Way, and $\ell \in \{0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88\}$\degree \space is the galactic longitude at which the observation was taken.
+where $V$ is the orbital velocity of the matter in a given observation, $\Delta V$ is the velocity of the matter relative to the Sun, $V_{sun} = 220$ km/s is the orbital velocity of the Sun around the center of the Milky Way, and $\ell$ is the galactic longitude at which the observation was taken.
 
 \subsection{Calculation of Orbital Radius of Matter in the Milky Way}
 
@@ -122,7 +122,7 @@ Once the mass enclosed within certain radii has been calculated, the radii and t
     \begin{figure}[h!]
         \caption{
             This is a graph of the radio emissions from 21.085-21.125 cm recorded at a Galactic Latitude of 0\degree \space and a Galactic Longitude of 88\degree \space.
-            Given this graph, it is possible to find the most-redshifted emission line by finding the peak with the highest wavelength.
+            Given this graph, it is possible to find the most-redshifted emission line by finding the peak with the longest wavelength.
             These peaks can then be used to find the orbital velocity of the part of the Milky Way in the path of this observation that is closest to the center of the Milky Way.
             This orbital velocity can be combined with the orbital radius of the most-redshifted part of the Milky Way to form Figure 2.
             \smallskip
@@ -168,9 +168,9 @@ The following factors may have impacted our ability to get accurate and/or
 precise results in this lab.
 
 \begin{itemize}
-    \item Estimating the peak values of graphs 
+    \item Estimating the peak values of graphs, rather than finding the maxima mathematically
     \item Estimating the mass of the Milky Way inside 17 kpc rather than calculating this value
-    \item Velocity of Earth relative to the Sun.
+    \item Velocity of Earth relative to the Sun affecting our $\Delta V$ values
 \end{itemize}
 
 \subsection{Impact of Errors}
